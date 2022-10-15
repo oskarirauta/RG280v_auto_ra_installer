@@ -44,7 +44,6 @@ if [ ${BUILD_STOCK} = true ] ; then
     cp -r ${DIRECTORY}/build_st/retroarch/.retroarch/cores ${DIRECTORY}/build_st/cores
     mkdir -p ${DIRECTORY}/build_st/retroarch/.retroarch/cores
     cp ${DIRECTORY}/opendingux_ra_cores_unofficial/"stock or rogue"/*.so ${DIRECTORY}/build_st/retroarch/.retroarch/cores/
-    #cp ${DIRECTORY}/opendingux_mrboom_core/mrboom_libretro.so ${DIRECTORY}/build_st/retroarch/.retroarch/cores/
     cp ${DIRECTORY}/build_st/cores/*.so ${DIRECTORY}/build_st/retroarch/.retroarch/cores/
     tar -czf ${DIRECTORY}/files_st/retroarch.tgz -C ${DIRECTORY}/build_st/retroarch/.retroarch assets core_info cores database filters system
 
@@ -174,6 +173,7 @@ if [ ${BUILD_ODBETA} = true ] ; then
     mkdir -p ${DIRECTORY}/build_odb/retroarch/.retroarch/cores
     cp ${DIRECTORY}/opendingux_ra_cores_unofficial/"stock or rogue"/*.so ${DIRECTORY}/build_odb/retroarch/.retroarch/cores/
     cp ${DIRECTORY}/opendingux_ra_cores_unofficial/beta/*.so ${DIRECTORY}/build_odb/retroarch/.retroarch/cores/
+    cp ${DIRECTORY}/opendingux_mrboom_core/*.so ${DIRECTORY}/build_odb/retroarch/.retroarch/cores/
     cp ${DIRECTORY}/build_odb/cores/*.so ${DIRECTORY}/build_odb/retroarch/.retroarch/cores/
     tar -czf ${DIRECTORY}/files_odb/retroarch.tgz -C ${DIRECTORY}/build_odb/retroarch/.retroarch assets core_info cores database filters system
 
